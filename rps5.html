@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/javascript.js" defer></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Rock Paper Scissors ✊ ✋ ✌️</h1>
+      </header>
+      <main>
+        <button class="gameButton js-rock-button" title="Rock"><img src="rock-emoji.png" class="move-icon"></button>
+        <button class="gameButton js-paper-button" title="Paper"><img src="paper-emoji.png" class="move-icon"></button>
+        <button class="gameButton js-scissors-button" title="Scissors"><img src="scissors-emoji.png" class="move-icon"></button>
+
+        <p class="js-result result"></p>
+        <p class="js-moves moves"></p>
+        <br>
+        <p class="js-score score"></p>
+
+        <button class="resetButton js-reset-score">Reset Score</button>
+
+        <button class="autoPlayButton js-auto-play-button">Auto-Play</button>
+
+        <div class="div-confirm confirmation-reset-score"></div>
+
+        <button class="thanksButton" onclick="
+          thankYou();
+        ">Thank You</button>
+
+        <div class="certificate">
+          <input class="js-player-name" placeholder="Player Name" onkeydown="
+            pressionaEnter(event);
+          ">
+          <button onclick="
+            printScore();
+          ">Print Score Certificate</button>
+        </div>
+      </main>
+      <footer>
+        <p class="footerNote">Project made by Hugo B.</p>
+      </footer>
+    </div>
+  </body>
+
+</html>
